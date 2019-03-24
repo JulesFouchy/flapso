@@ -52,7 +52,7 @@ class World0 extends World{
   //Physics
   float gravity = 25./framesPerSecond ;
   //Walls
-  Wall ground ;
+  Ground ground ;
   Wall ceiling ;
   ArrayList<Wall> obstacles ;
   //Miams
@@ -68,7 +68,7 @@ class World0 extends World{
   World0( Hero flapso ){
     super( flapso ) ;
     //Ground
-    ground = new Wall( width/2 , height , width , 100 , color(#FF69B4) ) ;
+    ground = new Ground( width/2 , height , width , 100 , color(#FF69B4) ) ;
     flapso.pos.y = height-150 ;
     ceiling = new Wall( width/2 , -50 , width , 100 ) ; 
     //Obstacles
